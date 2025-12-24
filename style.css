@@ -1,1 +1,74 @@
+body {
+    margin:0;
+
+}
+
+nav {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+
+#landing_page {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#projects_page {
+    background-color: lightgray;
+    text-align: center;
+    padding: 30px;
+}
+
+#about_page {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#experience_timeline {
+    background-color: lightgray;
+    text-align: center;
+    padding: 30px;
+}
+
+#contact_page {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+#home_background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-height: 10%;
+    min-width: 10%;
+}
+
+#landing_content{
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    color: #000000;
+    width: 40%;
+    padding: 10PX;
+    margin: auto;
+}
+
 
