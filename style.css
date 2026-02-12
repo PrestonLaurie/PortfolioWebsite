@@ -16,11 +16,17 @@
 html {
   margin: 0;
   overscroll-behavior: none;
+
+  scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
+}
+
+main {
+    width: 100%;
 }
 
 p {
@@ -38,25 +44,55 @@ p {
 h1 {
     font-family: Philosopher, helvetica, serif;
     letter-spacing: 5px;
-    font-size: clamp(2.5rem, 8vw, 10rem);
+    font-size: clamp(1.5rem, 8vw, 10rem);
     margin-bottom: 10px;
+
+    white-space: nowrap;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 3%;
+    font-size: 2.5em;
 }
 
 nav {
-    color: black;
-    background-color: lightblue;
-    text-align: center;
     position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 0.7;
+    right: 0;
+    
+    z-index: 100;
+
+    font-size: clamp(0.4em, 2em, 2.5em);
+    
+    width: 35%;
+    display: flex;
+    flex-direction: row;
 }
 
+nav a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 1vh;
+    margin-right: 0.1em;
+
+    color: #1C1C1C;
+
+    padding: 0.75rem 0.5rem;
+    text-decoration: none;
+}
+
+a:visited {color: inherit;}
+
+nav a:hover{color: #2F5D8C}
+
 #landing_page {
-    color: ivory;
+    color: #1C1C1C;
     text-align: center, center;
     position: relative;
-    outline: 2px solid red;
+    outline: 2px solid #2F5D8C;
     height: 100vh;
     top: 0;
     overflow: hidden;
@@ -67,82 +103,69 @@ nav {
     justify-content: center;
     text-align: center;
 
-}
-
-#landing_page video {
-    position: absolute;
-    object-position: center, center;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-color: #F7F6F3 
 }
 
 #title_content {
     position: absolute;
     
     object-position: center, center;
-    background-color: rgb(0,0,0, 0.3);
+
     width: 80%;
 
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
-    
+  
 }
+
+
 
 
 
 #projects_page {
-    color: black;
+    color: #1C1C1C;
     text-align: center;
-    padding: 30px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
     position: relative;
     
-    outline: 2px solid red;
-    height: 30vh;
+    outline: 2px solid #2F5D8C;
+    height: 100vh;
 
-    background-color: ghostwhite;
-}
-
-#about_page {
-    color: black;
-    text-align: center;
-    padding: 30px;
-    position: relative;
-    
-    outline: 2px solid red;
-    height: 30vh;
+    background-color: #F7F6F3;
 }
 
 #experience_timeline {
-    color: black;
+    color: #1C1C1C;
     text-align: center;
-    padding: 30px;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
     position: relative;
     
-    outline: 2px solid red;
-    height: 30vh;
+    outline: 2px solid #2F5D8C;
+    height: 100vh;
 
-    background-color: ghostwhite;
+    background-color: #F7F6F3
 }
 
 #contact_page {
-    color: black;
+    color: #1C1C1C;
     text-align: center;
-    padding: 30px;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
     position: relative;
     
-    outline: 2px solid red;
-    height: 30vh;
-}
+    outline: 2px solid #2F5D8C;
+    height: 100vh;
 
-footer {
-    color: black;
-    background-color: lightblue;
-    text-align: center;
-    padding: 10px;
+    background-color: #F7F6F3;
 }
 
 
